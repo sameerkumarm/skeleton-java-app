@@ -29,4 +29,14 @@ public class QueryProcessorTest {
     assertThat(queryProcessor.process("gkjsawhich of the following numbers is the largest:12,13,14,15,16,45"), is("45"));
   }
   
+  @Test
+  public void returnsPrimeNumbers() throws Exception {
+    assertThat(queryProcessor.process("gkjsawhich of the following numbers are primes: 526, 211, 4, 890,13"), is("211,13"));
+  }
+  
+  @Test
+  public void returnsPrimeNumbersNonPrime() throws Exception {
+    assertThat(queryProcessor.process("gkjsawhich of the following numbers are primes: 10, 20, 30, 40"), is(""));
+  }
+  
 }
