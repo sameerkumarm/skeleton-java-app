@@ -11,7 +11,7 @@ public class StatusPage {
     PrintWriter writer = resp.getWriter();
     writer.println("<html>");
     writer.println("<body>");
-    writer.println("<h3>The server is running!</h3>");
+    writer.println("<h3>The server is running with changes!</h3>");
     writer.println("</body>");
     writer.println("</html>");
   }
