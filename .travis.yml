@@ -2,3 +2,10 @@ language: java
 jdk:
 - openjdk8
 script: mvn clean verify
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: secure: t6oI16t/wfUkdP2f+9eYl/9FP+lWu9lBZLhu/a9uB56ibyLDLhQ5ErY2A1amUWHCws/M6RPlU17K44t+mWMjW6szlzKVIprO2k7ripZztLWW1MICE07kQ5S4I9inutdyAjFUwn9lHBK4dsr1quB10RgMRxlasjYEsiVjvBUvfwWg7W/brJ54Mqj34LLGhXutSXdIcuP3UVpzVGvZ2NobWl1WRaSTzPpqAeLYU8TxV3kXIrELCmYaR3e4uMAart5OCooQ2K85ZP2kD9XVqGJtw81ZgoDkRiueMFjaPlUKoOtNP9hBJoH5ICnXVypjZPgxoyaiA3MflIYfNCE+1D/Z8OIHxzoQ7hmffn3wh1c97QjZkYhDofezY/fv+uSwcluDvjyy0sWCnvvQqFyJLNTqNpwYGPiWbU9EyXUy3fdvJyMuciyJ3+nC7arN7cdyAYGN4q0gk8nguD/ORp4DJM/3KwnNFoxx+5HerKhvyFwv52ZqpiLI7rZ6DQ2jjXxbuzS4eoFeT6qQOjYtfBm0kZ70Wk3uRBDSdk9S6CWGL0WgZ5+ZMSwyCuz1jCYLmGTDE/9LAGR+CVXr5PlJEyQOIcQrNPCNedp/XWq34WXUk/AMD/Jq/MIuWNadMHQUpMwpxE0FFF+X/u0lx1fRSp27gLZ0ZWDr5pZiGpvDIOxyKwBI8Ac=
+  app: agile-bayou-21909
+
