@@ -39,4 +39,9 @@ public class QueryProcessorTest {
     assertThat(queryProcessor.process("gkjsawhich of the following numbers are primes: 10, 20, 30, 40"), is(""));
   }
   
+  @Test
+  public void returnsToThePowerOf() throws Exception {
+    assertThat(queryProcessor.process("gkjsawhat is 3 to the power of 4"), is("81"));
+  }
+  
 }
